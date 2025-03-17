@@ -5,16 +5,16 @@ html, body {
 }
 
 .container {
-    perspective:800px;
-    padding: 24px;
+    /* perspective:800px; */
+    margin: 8rem 24px;
+    display: flex;
 }
 .box {
     width: 200px;
     height: 400px;
-    background-color: rgb(92, 34, 146);
-    transform: rotateY(45deg);
+    background-color:  rgb(92, 34, 146);
     border-left: 20px solid black;
-    border-radius: 20px;
+    border-radius: 8px;
     box-shadow: 0 4px 6px 1px rgba(0,0,0,.6);
     position: relative;
 }
@@ -30,4 +30,12 @@ html, body {
     background-color: white;
     width: 100%;
     bottom: 36px;
+}
+
+.t1 {
+    transform: perspective(800px) rotateY(45deg);
+}
+
+.t2 {
+    transform: translateX(-100px) rotate(-8deg) scale(1.005);
 }
