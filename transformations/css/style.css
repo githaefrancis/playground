@@ -12,7 +12,7 @@ html, body {
 .box {
     width: 200px;
     height: 400px;
-    background-color:  rgb(92, 34, 146);
+    background-color:  rgb(85, 25, 25);
     border-left: 20px solid black;
     border-radius: 8px;
     box-shadow: 0 4px 6px 1px rgba(0,0,0,.6);
@@ -22,6 +22,7 @@ html, body {
 .box h2 {
     padding: 24px 12px;
     color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.8);
 }
 
 .box .line {
