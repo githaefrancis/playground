@@ -9,6 +9,7 @@ body {
   /* perspective:800px; */
   margin: 8rem 24px;
   display: flex;
+  flex-wrap: wrap;
 }
 .box {
   width: 200px;
@@ -50,6 +51,23 @@ body {
 }
 
 .t3 {
-  transform: translateX(50px);
-  transform: translateY(-30px);
+  /* transform: translateX(50px); */
+  /* transform: translateY(-30px); */
+  /* transform: translate(550px, -30px); */
+  transform: perspective(800px) translateZ(100px) translateX(-120px) translateY(-30px);
+}
+
+.t4 {
+    transform: rotate(45deg) translateX(-120px) translateY(100px);
+}
+.t5 {
+    transform: perspective(800px) rotateX(55deg);
+}
+
+.t6 {
+    transform: perspective(600px) rotateY(45deg) translateY(100px);
+}
+
+.t7 {
+    transform: perspective(600px) rotateZ(45deg) translateY(120px);
 }
