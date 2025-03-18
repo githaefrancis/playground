@@ -71,3 +71,7 @@ body {
 .t7 {
     transform: perspective(600px) rotateZ(45deg) translateY(120px);
 }
+
+.t8 {
+    transform: perspective(600px) skewX(15deg) translateY(75px)
+}
