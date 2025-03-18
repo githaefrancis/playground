@@ -13,7 +13,7 @@ const path = require("path");
   const filePath = "file://" + path.resolve(__dirname, "../transformations/index.html");
   await page.goto(filePath, { waitUntil: "networkidle2" });
 
-  await page.screenshot({ path: "screengrab.png", fullPage: true });
+  await page.screenshot({ path: "transformations/screengrab.png", fullPage: true });
   console.log(filePath);
 
   await browser.close();
