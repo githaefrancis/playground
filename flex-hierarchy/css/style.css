@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: fantasy;
+  letter-spacing: 0.0125em;
+  line-height: 2.35rem;
+}
+.container {
+  display: flex;
+  gap: 2px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 1rem auto;
+  justify-content: center;
+}
+
+.container > div {
+  height: 420px;
+  flex-basis: calc(50% - 0.75rem);
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: darkgoldenrod;
+  font-size: 2.25rem;
+  padding: 1rem 1.325rem;
+}
+
+.container > div:nth-child(2n) {
+  position: relative;
+  top: 8.375rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container > div {
+    flex-basis: 100%;
+  }
+  .container > div:nth-child(2n) {
+    position: relative;
+    top: 0;
+  }
+  .container {
+    margin: auto;
+  }
+}
