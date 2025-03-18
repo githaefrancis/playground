@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "puppeteer": "^24.4.0"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7"
   }
 }
